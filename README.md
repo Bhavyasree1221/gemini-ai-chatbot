@@ -1,3 +1,4 @@
+LIVE DEMO:  https://gemini-ai-chatbot-1-nlql.onrender.com
 # Gemini AI Chatbot
 
 A simple AI chatbot built using Google's Gemini API and Gradio.
