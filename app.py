@@ -1,13 +1,15 @@
 from google import genai
 import gradio as gr
-from getpass import getpass
+import os 
 
 
 # ==========================================
 # 1. GEMINI API KEY
 # ==========================================
 
-api_key = getpass("Enter your Gemini API key: ")
+
+
+api_key = os.getenv("GEMINI_API_KEY")
 
 client = genai.Client(api_key=api_key)
 
