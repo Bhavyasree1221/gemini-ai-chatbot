@@ -287,4 +287,8 @@ with gr.Blocks() as demo:
 # 5. LAUNCH
 # ==========================================
 
-demo.launch(css=custom_css)
+demo.launch(
+    css=custom_css,
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860))
+)
